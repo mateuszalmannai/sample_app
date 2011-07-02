@@ -1,3 +1,4 @@
+# PagesController class inherits from ApplicationController
 class PagesController < ApplicationController
   def home
     @title = "Home"
