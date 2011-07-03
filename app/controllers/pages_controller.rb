@@ -1,4 +1,5 @@
 # PagesController class inherits from ApplicationController
+# The actions are regular methods inside this class
 class PagesController < ApplicationController
   def home
     @title = "Home"
