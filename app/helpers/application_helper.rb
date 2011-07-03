@@ -1,4 +1,4 @@
-# modules are a group of functions that can be used by ruby classes
+# modules are a group of functios that can be used by ruby classes
 module ApplicationHelper                              # module is a piece of selfcontained code that gets included into a class
   # Return a title on a per-page basis.
   def title                                           # Function definition 
@@ -9,6 +9,10 @@ module ApplicationHelper                              # module is a piece of sel
     else                                              # else interpolate the base_title and the @title variable into a 
       "#{base_title} | #{@title}"                     # doublequoted string
     end
+  end
+
+  def logo 
+    image_tag("logo.png", :alt => "Sample App", :class => "round")
   end
 end
 # instance variables have the special property that they are nil when 
